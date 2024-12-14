@@ -1,24 +1,28 @@
-# Food Menu
+# Menu-App
 
-This is a **Food Menu** application built with **React**, **React-Bootstrap**, and **react-reveal** to display a variety of food items. Users can filter items by category, search for specific items by name, and enjoy a responsive design that adapts to different devices (mobile, tablet, desktop).
+A responsive food menu app built with React, Bootstrap, and React-Bootstrap. This project showcases an interactive and visually appealing menu interface for a restaurant or food service.
+
+## Live Demo
+
+Check out the live version of the app here: [Menu-App on GitHub Pages](https://devahmedkhalil.github.io/Menu-App/)
+
+---
 
 ## Features
 
-- **Category Filter:** Filter food items by category (e.g., Appetizers, Main Courses, Desserts, etc.).
-- **Search Functionality:** Search for food items by name.
-- **Responsive Design:** The app adjusts the layout for different screen sizes (mobile, tablet, desktop).
-- **Zoom Animation:** Food items have a zoom-in effect when displayed on the screen.
-- **Simple UI/UX:** A clean, easy-to-navigate interface for browsing the menu.
+- Responsive design for all screen sizes.
+- Beautiful animations and transitions.
+- Uses React-Bootstrap for UI components.
+- React Reveal for animation effects.
+- Modern and user-friendly interface.
 
-## Technologies Used
+---
 
-- **React:** JavaScript library for building user interfaces.
-- **React-Bootstrap:** Bootstrap components for React.
-- **react-reveal:** Animation library for React used for zoom-in effects.
-- **react-responsive:** Library to handle responsiveness for mobile, tablet, and desktop devices.
+## Installation and Setup
 
-## Getting Started
+To run the app locally, follow these steps:
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (includes npm) installed.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/DevAhmedKhalil/Menu-App.git
+   ```
