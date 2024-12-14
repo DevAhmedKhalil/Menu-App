@@ -17,6 +17,7 @@ function App() {
 
   // Filter by category
   const filterByCategory = (cat) => {
+    console.log("Selected Category:", cat);
     if (cat === "الكل") {
       setItemsData(items);
     } else {

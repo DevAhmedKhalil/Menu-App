@@ -34,6 +34,7 @@ body {
 }
 
 .btn-style {
+  height: 40px;
   color: black;
   background-color: white;
   font-family: Almarai;
@@ -52,7 +53,7 @@ body {
   letter-spacing: 0;
   line-height: 24px;
   background-color: #b45b35;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .btn-search {
