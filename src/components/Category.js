@@ -11,24 +11,28 @@ const Category = ({ filterByCategory, allCategoriesWithoutRepeat }) => {
   return (
     <Row className="my-2 mb-5">
       <Col sm="12" className="d-flex justify-content-center">
-        <Roll>
-          {allCategoriesWithoutRepeat.length > 0 ? (
-            allCategoriesWithoutRepeat.map((categ) => {
-              return (
-                <div>
-                  <button
-                    onClick={() => onFilter(categ)}
-                    className="btn-style mx-2"
-                  >
-                    {categ}
-                  </button>
-                </div>
-              );
-            })
-          ) : (
+        {allCategoriesWithoutRepeat.length > 0 ? (
+          <div className="scroll-buttons-container">
+            <Roll>
+              {allCategoriesWithoutRepeat.map((categ) => {
+                return (
+                  <div key={categ}>
+                    <button
+                      onClick={() => onFilter(categ)}
+                      className="btn-style mx-2"
+                    >
+                      {categ}
+                    </button>
+                  </div>
+                );
+              })}
+            </Roll>
+          </div>
+        ) : (
+          <Roll>
             <h3>لا يوجد تصنيفات</h3>
-          )}
-        </Roll>
+          </Roll>
+        )}
       </Col>
     </Row>
   );

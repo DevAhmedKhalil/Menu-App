@@ -108,3 +108,49 @@ body {
 .brand-color {
   color: #b45b35;
 }
+
+/* ------------------------------------------------- */
+
+/* For small screens only (max-width: 768px) */
+@media (max-width: 768px) {
+  .scroll-buttons-container {
+    display: flex; /* Ensure buttons are arranged horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px 0; /* Optional: Padding for spacing */
+    width: 100%; /* Full width */
+    justify-content: flex-start; /* Align buttons to the left */
+    align-items: center; /* Vertically align buttons */
+  }
+
+  .scroll-buttons-container div {
+    margin-right: 10px; /* Space between buttons */
+  }
+
+  .btn-style {
+    height: fit-content;
+    min-height: 40px;
+    flex: 0 0 auto; /* Prevent stretching of buttons */
+    width: 100%; /* Allow buttons to take up full width of the container */
+    max-width: 150px; /* Limit the max width of each button */
+    margin: 5px; /* Optional margin between buttons */
+  }
+
+  /* Optional: Hide scrollbar for a cleaner look (works in WebKit browsers like Chrome) */
+  .scroll-buttons-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* For large screens (min-width: 769px), reset styles */
+@media (min-width: 769px) {
+  .scroll-buttons-container {
+    display: flex;
+    overflow-x: visible; /* No horizontal scroll */
+  }
+
+  .btn-style {
+    width: auto; /* Let buttons have their natural width */
+    margin: 10px; /* Margin between buttons */
+  }
+}
