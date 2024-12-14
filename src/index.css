@@ -1,0 +1,97 @@
+html,
+body {
+  overflow: hidden; /* Hides scrollbars */
+  height: 100%; /* Ensures content fits within the viewport */
+}
+
+.color-body {
+  background-color: #f8f8f8;
+  height: 100vh;
+}
+
+.font {
+  font-family: "Almarai", serif;
+}
+
+.title {
+  color: #224f61;
+  font-family: Almarai;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 64px;
+}
+
+.underline {
+  height: 1px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid #b45b35;
+}
+
+.btn {
+  color: #8c8c8c;
+  font-family: Almarai;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.btn:hover {
+  color: white;
+  font-family: Almarai;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
+  background-color: #b45b35;
+}
+
+.btn-search {
+  background-color: white;
+  color: #b45b35;
+  border-radius: 8px;
+}
+
+.btn-search:hover {
+  background-color: #b45b35;
+  color: white;
+  border-color: #b45b35;
+}
+
+.img-item {
+  height: 180px;
+  width: 252px;
+  border-radius: 5px;
+}
+
+.img-description {
+  color: #8c8c8c;
+  font-family: Almarai;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.item-title {
+  color: #555555;
+  font-family: Almarai;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.item-price {
+  color: #b45b35;
+  font-family: Almarai;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.brand-color {
+  color: #b45b35;
+}
