@@ -1,7 +1,11 @@
-html,
+html {
+  direction: rtl; /* For right-to-left languages */
+  scrollbar-gutter: stable; /* Ensures the scrollbar remains stable on the right */
+}
+
 body {
-  overflow: hidden; /* Hides scrollbars */
-  height: 100%; /* Ensures content fits within the viewport */
+  overflow-x: hidden;
+  overflow-y: auto; /* Vertical scroll enabled */
 }
 
 .color-body {
@@ -29,23 +33,26 @@ body {
   border: 2px solid #b45b35;
 }
 
-.btn {
-  color: #8c8c8c;
+.btn-style {
+  color: black;
+  background-color: white;
   font-family: Almarai;
   font-size: 18px;
-  font-weight: bold;
   letter-spacing: 0;
   line-height: 24px;
+  border: 1px solid #b45b35;
+  border-radius: 5px;
 }
 
-.btn:hover {
-  color: white;
+.btn-style:hover {
+  color: black;
   font-family: Almarai;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 24px;
   background-color: #b45b35;
+  border-radius: 5px;
 }
 
 .btn-search {
@@ -64,9 +71,10 @@ body {
   height: 180px;
   width: 252px;
   border-radius: 5px;
+  /* margin: auto; */
 }
 
-.img-description {
+.item-description {
   color: #8c8c8c;
   font-family: Almarai;
   font-size: 16px;
@@ -81,6 +89,10 @@ body {
   font-weight: bold;
   letter-spacing: 0;
   line-height: 20px;
+}
+
+.card-color {
+  background-color: #f8f8f8 !important;
 }
 
 .item-price {

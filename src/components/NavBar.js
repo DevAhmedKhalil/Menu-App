@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Form, Nav, Navbar, Row } from "react-bootstrap";
 
-const NavBar = () => {
+const NavBar = ({ filterBySearch }) => {
+  const [searchValue, setSearchValue] = useState("");
+
+  const onSearch = () => {
+    filterBySearch(searchValue);
+    setSearchValue("");
+  };
+
   return (
     <Row>
       <Navbar expand="lg" bg="dark" data-bs-theme="dark">
@@ -17,8 +24,20 @@ const NavBar = () => {
               navbarScroll
             ></Nav>
             <Form className="d-flex">
-              <Form.Control type="text" placeholder="إبحث.." className="mx-2" />
-              <button className="btn-search">إبحث</button>
+              <Form.Control
+                type="text"
+                placeholder="إبحث.."
+                className="mx-2"
+                onChange={(e) => setSearchValue(e.target.value)}
+                value={searchValue}
+              />
+              <button
+                type="button"
+                onClick={() => onSearch()}
+                className="btn-search"
+              >
+                إبحث
+              </button>
             </Form>
           </Navbar.Collapse>
         </Container>
